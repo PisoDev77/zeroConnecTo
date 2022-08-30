@@ -1,1 +1,45 @@
-/* 웹 카페 */
+@import url("./normalize.css");
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* Layout */
+
+.header,.visual,.main,.slogan,.footer-inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header{
+    background: yellow;
+    height: 10vh;
+}
+
+/* 비주얼 */
+.visual{
+    background: pink;
+    height: 120px;
+}
+
+/* 메인 */
+.main{
+    background: blue;
+    min-height: 400px;
+}
+
+/* 슬로건 */
+.slogan{
+    background: lime;
+    height: 10vh;
+}
+
+/* 푸터 */
+.footer{
+    background: purple;
+}
+.footer-inner{
+    background: orange;
+    height: 10vh;
+}
