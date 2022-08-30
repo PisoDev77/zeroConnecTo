@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "start" : "live-server --port=8090"
+    "start": "live-server --port=8090"
   },
   "devDependencies": {
+    "htmlhint": "^1.1.4",
     "live-server": "^1.2.2"
   }
 }
