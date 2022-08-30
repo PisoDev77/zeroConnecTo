@@ -1,7 +1,34 @@
+
 @import url("./normalize.css");
+@import url("./reset.css");
+
 
 *, *::before, *::after{
     box-sizing: border-box;
+}
+
+/* 기뷴 스타일 */
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 
+    Pretendard, -apple-system, 
+    BlinkMacSystemFont, system-ui, 
+    Roboto, "Helvetica Neue", "Segoe UI", 
+    "Apple SD Gothic Neo", "Noto Sans KR", 
+    "Malgun Gothic", "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol", 
+    sans-serif;
+
+    font-size: 1.4rem;
+
+    background-color: #ccc;
+    background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+    /* 
+    serif 날카로워
+        sans-serif 둥그러ㄴ
+    */
 }
 
 /* Layout */
@@ -13,7 +40,7 @@
 
 /* 헤더 */
 .header{
-    background: yellow;
+    background: white;
 }
 
 /* 비주얼 */
@@ -28,54 +55,55 @@
     /* overflow: hidden; */
     min-height: 400px;
     padding: 15px;
-
+    
     /*
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-
+    
     //gap: 30px;
     
     padding: 30px;
     */
 }
 
-    /* .clearfix{ */
+/* .clearfix{ */
     .clearfix::after{
         content: "";
         clear:both;
         display: block;
     }
-
+    
     .group{
         background: silver;
-
+        
         float: left;
         margin: 15px;
     }
-
-        .group1{
-            width: 250px;
-        }
-        .group2{
-            width: 380px;
-            /* order: 1; */
-        }
-        .group3{
-            width: 190px;
-        }
-
-/* 슬로건 */
+    
+    .group1{
+        width: 250px;
+    }
+    .group2{
+        width: 380px;
+        /* order: 1; */
+    }
+    .group3{
+        width: 190px;
+    }
+    
+    /* 슬로건 */
 .slogan{
     background: lime;
-
+    
     /* clear: both; */
 }
 
 /* 푸터 */
 .footer{
-    background: purple;
+    background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 .footer-inner{
     background: orange;
+    height: 15vh;
 }
