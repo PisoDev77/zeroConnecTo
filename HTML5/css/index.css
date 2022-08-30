@@ -14,7 +14,6 @@
 /* 헤더 */
 .header{
     background: yellow;
-    height: 10vh;
 }
 
 /* 비주얼 */
@@ -26,13 +25,51 @@
 /* 메인 */
 .main{
     background: blue;
+    /* overflow: hidden; */
     min-height: 400px;
+    padding: 15px;
+
+    /*
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    //gap: 30px;
+    
+    padding: 30px;
+    */
 }
+
+    /* .clearfix{ */
+    .clearfix::after{
+        content: "";
+        clear:both;
+        display: block;
+    }
+
+    .group{
+        background: silver;
+
+        float: left;
+        margin: 15px;
+    }
+
+        .group1{
+            width: 250px;
+        }
+        .group2{
+            width: 380px;
+            /* order: 1; */
+        }
+        .group3{
+            width: 190px;
+        }
 
 /* 슬로건 */
 .slogan{
     background: lime;
-    height: 10vh;
+
+    /* clear: both; */
 }
 
 /* 푸터 */
@@ -41,5 +78,4 @@
 }
 .footer-inner{
     background: orange;
-    height: 10vh;
 }
