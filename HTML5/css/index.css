@@ -30,6 +30,10 @@ body{
         sans-serif 둥그러ㄴ
     */
 }
+a{
+    text-decoration: none;
+    color:inherit;
+}
 
 /* Layout */
 
@@ -41,7 +45,36 @@ body{
 /* 헤더 */
 .header{
     background: white;
+    position: relative;
+
+    padding: 0 30px;
 }
+
+    /* 로고 */
+    .logo{
+        position: absolute;
+        top: 45px;
+        left: 65px;
+        
+        /* background: blue; */
+    }
+
+    /* Member Links */
+    .member{
+        text-align: right;
+        
+        padding: 4px 0;
+        transform: translateX(8px);
+    }
+    .member li, .member a{
+        display: inline-block;
+    }   
+    .member a{
+        padding: 6px 8px;        
+        text-transform: uppercase;
+        /* font-variant: small-caps; */
+    }
+
 
 /* 비주얼 */
 .visual{
