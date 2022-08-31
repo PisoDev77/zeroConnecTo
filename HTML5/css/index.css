@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+/* 숨김 컨텐츠 */
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    /* clip-path: polygon(0 0,0 0,0 0); */
+    clip-path: inset(50%);
+}
+
 /* 기뷴 스타일 */
 html{
     font-size: 10px;
@@ -75,6 +85,14 @@ a{
         /* font-variant: small-caps; */
     }
 
+    /* Main Menu */
+    .navigation{
+        /* 하위 메뉴를 배치할 공간 */
+        padding-bottom: 40px;
+    }
+    .menu{
+        background-color: orange;
+    }
 
 /* 비주얼 */
 .visual{
