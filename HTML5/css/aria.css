@@ -1,0 +1,20 @@
+
+div{
+    width: 200px;
+    height: 100px;
+}
+
+
+.content{
+    background-color: lightblue;
+    box-sizing: content-box;
+
+    margin-top: 50px;
+}
+
+.border{
+    background-color: lightcoral;
+    box-sizing: border-box;
+
+    margin-top: 50px;
+}
