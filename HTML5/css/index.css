@@ -1,4 +1,7 @@
 
+@import url("./fonts.css");
+@import url("./fontello.css");
+
 @import url("./normalize.css");
 @import url("./reset.css");
 
@@ -58,6 +61,8 @@ a{
     position: relative;
 
     padding: 0 30px;
+
+    border-radius: 0 0 15px 15px;
 }
 
     /* 로고 */
@@ -65,8 +70,6 @@ a{
         position: absolute;
         top: 45px;
         left: 65px;
-        
-        /* background: blue; */
     }
 
     /* Member Links */
@@ -91,8 +94,90 @@ a{
         padding-bottom: 40px;
     }
     .menu{
-        background-color: orange;
+        /* background-color: orange; */
+        background: 
+                #FF870F
+                linear-gradient(to bottom, #f7c231 0%,#ff870f 35%,#ff870f 35%,#ff870f 70%,#f7c231 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        border-top:2px solid currentColor;
+        height: 47px;
+        padding-left: 232px;
+
+        border-radius: 0 0 5px 5px;
     }
+
+        /* 메뉴 아이템 */
+        .menu-item{
+            float: left;
+            position: relative;
+            border-left: 2px solid #fff;
+        }
+        .menu-button{
+            line-height: 45px;
+            border: 0;
+            background: transparent;
+            padding:0 21px;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 1px 1px 0 #000, -1px 1px 0 #000;
+        }
+        .is-active .menu-button{
+            color: #ff0;
+            /* text-decoration: underline; */
+            /* text-underline-offset: 1.6rem; */
+            /* text-underline-offset: initial; */
+        }
+        .is-active .menu-button::after{
+            content: "";
+            background: #000;
+            display: block;
+            height: 2px;
+        }
+
+            /* sub-menu */
+            .sub-menu{
+                display: none;
+                position: absolute;
+                top: 47px;
+                white-space: nowrap;
+                padding: 4px 0;
+            }
+            .menu-html,menu-css,menu-standards{
+                left: 0;
+            }
+            .menu-accessibility, .menu-qna, .menu-archive{
+                right: 0;
+            }
+            .is-active .sub-menu{
+                display: block;
+            }
+            .sub-menu li, .sub-menu a{
+                display: inline-block;
+                /* float: left; */
+            }
+            .sub-menu li{
+
+                margin-left: .2em;
+
+            }
+            .sub-menu a{
+                padding:6px 8px;
+            }
+            .sub-menu a::before{
+                content: "\f192";
+                font-family: 'fontello';
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                margin-right: .2em;
+                text-align: center;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .sub-menu a:hover::before,
+            .sub-menu a:focus::before{
+                content: "\e800";
+            }
 
 /* 비주얼 */
 .visual{
