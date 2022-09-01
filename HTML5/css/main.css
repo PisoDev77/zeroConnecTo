@@ -207,7 +207,7 @@ body{
   position: relative;
 }
 
-.isual::before, .visual::after{
+.visual::before, .visual::after{
   content: "";
   position: absolute;
   top: 0;
@@ -221,6 +221,7 @@ body{
 .visual::before{ 
   background-image: url(./images/ani_flower_01.png) , url(./images/ani_flower_02.png);
   background-position: 0 -10px , 670px 0;
+  
 }
 
 .visual::after{ 

@@ -1,20 +1,30 @@
-
 div{
+    box-sizing: border-box;
     width: 200px;
+
+    text-align: center;
     height: 100px;
 }
 
-
-.content{
-    background-color: lightblue;
-    box-sizing: content-box;
-
-    margin-top: 50px;
+.static{
+    background-color: bisque;
+    top: 50px;
+    left: 100px;
 }
+.static .inner{
+    position:absolute;
+    background-color: yellow;
+    /* top:0;
+    left: 20px; */
+}
+.relative{
+    background-color: aqua;
+    position: relative;
 
-.border{
-    background-color: lightcoral;
-    box-sizing: border-box;
-
-    margin-top: 50px;
+}
+.relative .inner{
+    position:absolute;
+    background-color: red;
+    /* top:0;
+    left: 20px; */
 }
