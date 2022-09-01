@@ -36,8 +36,21 @@ body{
 
     font-size: 1.4rem;
 
+    /*     
     background-color: #ccc;
-    background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+    background-image: 
+        url("./images/bg_flower.png") no-repeat 50% 0, 
+        linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 0, 0 0;
+     */
+
+    background: 
+        url("./images/bg_flower.png") no-repeat 50% 0, 
+        linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%),
+        #ccc
+    ;
+
     /* 
     serif 날카로워
         sans-serif 둥그러ㄴ
@@ -180,10 +193,27 @@ a{
             }
 
 /* 비주얼 */
+@keyframes moveEffect{
+    0%{
+        font-size: 12px;
+        color: rgba(0,0,0,0);
+        transform: translate(0,0);
+    }
+    100%{
+        font-size: 24px;
+        color: rgba(0,0,0,1);
+        transform: translate(400px,75px);
+    }
+}
 .visual{
-    background: pink;
     height: 120px;
 }
+    .visual-text{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        animation-name: moveEffect;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
 
 /* 메인 */
 .main{
