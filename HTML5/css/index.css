@@ -205,9 +205,41 @@ a{
         transform: translate(400px,75px);
     }
 }
+ @keyframes fadeEffect{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
 .visual{
     height: 120px;
+    position: relative;
 }
+    .visual::before, .visual::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+
+        /* animation-name: fadeEffect;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 2s; */
+        animation: fadeEffect 2s infinite alternate;
+    }
+    .visual::before{
+        /* background-color: pink; */
+        background-image: url("./images/ani_flower_01.png"), url("./images/ani_flower_02.png");
+        background-position: 0 -10px, 600px 0;
+        /* animation-delay: 1s; */
+    } 
+    .visual::after{
+        /* background-color: yellow; */
+        background-image: url("./images/ani_flower_03.png"), url("./images/ani_flower_04.png");
+        background-position: 300px 0, 800px 0;
+        animation-delay: 1s;
+    }
     .visual-text{
         font-family: Georgia, 'Times New Roman', Times, serif;
         animation-name: moveEffect;
