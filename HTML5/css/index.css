@@ -365,8 +365,27 @@ a{
                 color: #FF870F;
             }
 
-
         
+        .validation-links{
+            margin-top:25px;
+        }
+            .validations a{
+                display: inline-block;
+                width: 100%;
+                padding: 1rem;
+                text-indent: 15%;
+                border-radius: 24px;
+                background: 
+                url("./images/validation_icon.png") no-repeat 20px 50%,
+                linear-gradient(to right, #ccc 0%, #eee 35%, #eee 70%, #ccc 100%)
+                ,#ccc;
+                margin-top: 10px;
+                border: 1px solid #aaa;
+            }
+            .validations a:hover, .validations a:focus{
+                color: red;
+                
+            }
     
     /* 슬로건 */
 .slogan{
