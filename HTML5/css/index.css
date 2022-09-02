@@ -248,6 +248,7 @@ a{
         animation-fill-mode: forwards;
         position: relative;
         z-index: 10;
+        display: inline-block;
     }
 
 /* 메인 */
@@ -484,7 +485,6 @@ a{
                 align-items: center;
             }
             .form-group{
-                background-color: blue;
                 flex-grow: 1;
             }
                 
@@ -493,7 +493,125 @@ a{
                 }
             
             
+            /* 공지사항 및 자료실 */
+            /*
+            .board{
+                background: yellow;
+                margin-top: 20px;
+                position: relative;
+            }
+            .board-section .board-tab{
+                display: none;
+            }
+            .is-select{
+                display: block;
+            }
+            .board-tab{
+                position: absolute;
+                z-index: 10;
+                top: 0;
+            }
+                .archive-tab{
+                    left: 64px;   
+                }
+                .board-more{
+                    position: absolute;
+                    top:0;
+                    right:0;
+                }
+            .board-panel{
+                background-color: red;
+                padding-top: 24px;
+            }
+            
 
+            .board-panel li{
+                margin-top:10px;
+                background-color: coral;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+            }   
+            .board-panel li a{
+                background-color: orange;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            */
+            .board{
+                margin-top: 20px;
+                position: relative;
+                min-height: 180px;
+            }
+            .board-panel,.board-more{
+                display: none;    
+            }
+            .is-select .board-panel,.is-select .board-more{
+                display: block;
+            }
+
+            .board-tab{
+                /* float: left; */
+                border: 1px solid #aaa;
+                background-color: #ccc;
+                border-radius: 4px 4px 0 0;
+                padding: 6px 14px;
+                color: #666;
+                position: absolute;
+                top:0;
+            }
+            .notice-tab{
+                left:0;
+            }
+            .archive-tab{
+                left:78px;
+            }
+            .is-select .board-tab{
+                color: #FF870F;
+                border-color: currentColor, currentColor, transparent, currentColor;
+                background-color: #fff;
+            }
+
+            .board-panel{
+                /* position: absolute; */
+                /* background-color: skyblue; */
+                
+                padding-top: 40px;
+                /* width: 100%;
+                top:40px; */
+            }
+                .board-panel li{
+                    /* background-color: orange; */
+                    display: flex;
+                    margin-top: 12px;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                    .board-panel a{
+                        /* background-color: khaki; */
+                        /* flex-grow: 1; */
+                        width: calc(100% - 6em);
+                        margin-right: 8px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .board-panel time{
+                        /* background-color: lime; */
+                    }
+            .board-more{
+                position: absolute;
+                top: -8px; right: -8px;
+            }
+            .more{
+                padding: 8px;
+            }
+            .more::before{
+                color: hsla(110, 50%, 30%, 1);
+            }
 
         .group3{
             width: 190px;
