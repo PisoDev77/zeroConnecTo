@@ -286,13 +286,6 @@ a{
         width: 250px;
     }
     
-    .group2{
-        width: 380px;
-        /* order: 1; */
-    }
-    .group3{
-        width: 190px;
-    }
 
         .login{
             background: radial-gradient(circle at right top, #f7c231, #FF870F);
@@ -386,6 +379,63 @@ a{
                 color: red;
                 
             }
+        
+        /* 웹 관련 용어 */
+        .term{
+            background: #ccc linear-gradient(to bottom, #ccc, #eee);
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        .term-title{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .term-list{
+            margin-top: 15px;
+        }
+            .term-list div{
+                margin-top: 10px;
+                display: flow-root;
+            }
+            .term-list-subject, .term-list-brief{
+                float: right;
+                width: 145px;
+            }
+            .term-list-subject{
+                color: #296897;
+                font-weight: 500;
+            }
+            .term-list-thumbnail{
+                float: left;
+            }
+            .term-list-thumbnail img{
+
+                /* display: block; */
+                /* vertical-align: top; */
+                vertical-align: middle;
+            }
+            .term-list-brief{
+                line-height: 1.5;
+                margin-top: 5px;
+            }
+            .cross .term-list-subject, .cross .term-list-brief{
+                float: left;
+            }
+            .cross .term-list-thumbnail{
+                float: right;
+            }
+
+
+        .group2{
+            width: 380px;
+            /* order: 1; */
+        }
+        .group3{
+            width: 190px;
+        }
     
     /* 슬로건 */
 .slogan{
