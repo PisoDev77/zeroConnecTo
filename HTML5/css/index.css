@@ -5,6 +5,7 @@
 @import url("./normalize.css");
 @import url("./reset.css");
 
+@import url("./form.css");
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -435,25 +436,33 @@ a{
         }
 
             /* 검색 */
+            /*
             .search-form{
                 padding: 10px;
                 background: linear-gradient(to bottom, #ccc, #eee);
-                border:1px solid #ccc;
+                border:2px solid #ccc;
+                border-bottom: none;
                 border-radius: 10px 10px 0 0;
             }
             .search-form fieldset{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 gap: 10px;
+                background-color: blue;
             }
             .form-group{
                 display: flex;
                 gap: 10px;
+                align-self: stretch;
+                background-color: red;
             }
+                .form-group label{
+                    align-self: center;
+                }
             .form-group-input{
                 border-radius: 10px 10px 0 0;
-                border: 1px solid #ccc;
-                border-bottom: none;
+                border: 2px solid #ccc;
                 padding:5px;
             }
             .button-fill{
@@ -461,7 +470,29 @@ a{
                 background-color: #000;
             } .button{
                 border-radius: 10px;
+                padding: 5px 5px;
             }
+            */
+            .search-form-inner{
+                background: #ccc linear-gradient(to bottom, #ccc, #eee);
+                border: 1px solid #aaa;
+                border-radius: 15px 15px 0 0;
+                padding: 15px 25px 10px;
+
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+            }
+            .form-group{
+                background-color: blue;
+                flex-grow: 1;
+            }
+                
+                .form-group-input{
+                    margin-right: 10px;
+                }
+            
+            
 
 
         .group3{
