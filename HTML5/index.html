@@ -181,6 +181,7 @@
                 ><input
                   type="email"
                   id="userEmail"
+                  name="userEmail"
                   required
                   placeholder="guest@zerobase.com"
                 />
@@ -190,6 +191,7 @@
                 ><input
                   type="password"
                   id="userPw"
+                  name="userPw"
                   required
                   placeholder="8자리 이상"
                 />
@@ -260,7 +262,21 @@
 
       </div>
 
-      <div class="group group2">그룹2</div>
+      <div class="group group2">
+        
+        <h2 class="sr-only">검색</h2>
+        <form action="https://formspree.io/seulbinim@gmail.com" class="search-form" method="POST">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="form-group">
+              <label for="search" class="form-group-label"><span class="icon-search" aria-hidden="true"></span>자료검색</label>
+              <input type="search" id="search" class="form-group-input" required placeholder="검색어를 입력하세요. 예)HTML5"/>
+            </div>
+            <button type="submit" class="button-fill button">검색</button>
+          </fieldset>
+        </form>
+
+      </div>
       <div class="group group3">그룹3</div>
       <!-- <div class="clearfix"></div> -->
 

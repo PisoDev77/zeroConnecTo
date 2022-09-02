@@ -433,6 +433,37 @@ a{
             width: 380px;
             /* order: 1; */
         }
+
+            /* 검색 */
+            .search-form{
+                padding: 10px;
+                background: linear-gradient(to bottom, #ccc, #eee);
+                border:1px solid #ccc;
+                border-radius: 10px 10px 0 0;
+            }
+            .search-form fieldset{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+            .form-group{
+                display: flex;
+                gap: 10px;
+            }
+            .form-group-input{
+                border-radius: 10px 10px 0 0;
+                border: 1px solid #ccc;
+                border-bottom: none;
+                padding:5px;
+            }
+            .button-fill{
+                color:white;
+                background-color: #000;
+            } .button{
+                border-radius: 10px;
+            }
+
+
         .group3{
             width: 190px;
         }
