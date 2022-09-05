@@ -484,8 +484,9 @@ a{
                 flex-flow: row nowrap;
                 align-items: center;
             }
-            .form-group{
+            .search-form-inner, .form-group{
                 flex-grow: 1;
+                margin-right: 12px;
             }
                 
                 .form-group-input{
