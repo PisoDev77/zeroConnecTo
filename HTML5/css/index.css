@@ -614,6 +614,117 @@ a{
                 color: hsla(110, 50%, 30%, 1);
             }
 
+        /* 새소식 */
+        /*
+        .news{
+            margin-top: 20px;
+
+            position: relative;
+        }
+        .news-title{
+            color: orange;
+            top:0;
+            padding: 8px;
+            width: 320px;
+            border-image: linear-gradient(to right, #eee 0%, #fff 100%);
+            border-bottom: 5px solid ;
+        }
+        .news-more{
+            position: absolute;
+            background-color: blue;
+            top:0;
+            right: 0;
+        }
+        .news-item{
+            padding-top: 48px;
+            position: relative;
+            
+        }
+            .news-item-title, .news-item-brief, .news-item-date{
+                background-color: pink;
+                width: 250px;
+                float: right;
+            }
+            .news-item-title{
+            }
+            .news-item-date{
+                background-color: lime;
+                padding-top: 8px;
+            }
+            .news-item-brief{
+                margin-top: 10px;
+                width: 250px;
+            }
+            .news-item-thumbnail {
+                display: flex;
+                background-color: aliceblue;
+                flex-direction: column;
+                align-items: center;
+                gap:12px;
+            }
+            .news-item-thumbnail > img{
+                box-shadow: 5px 5px 5px 5px gray;
+            }
+        */
+
+        .news{
+            margin-top: 20px;
+            position: relative;
+        }
+        .news::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #aaa linear-gradient(90deg, #aaa, #fff);
+            top:35px;
+        }
+        .news-title{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FF870F;
+        }
+        .news-more{
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            padding: 8px;
+        }
+        
+        
+        .news-link{
+            display: block;
+        }
+        .news-item{
+            margin-top:35px;
+            padding-left: 130px;
+            position: relative;
+        }
+        .news-item-title{
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+            .news-item-thumbnail{
+                position: absolute;
+                top: 2PX;
+                left: 0;
+                text-align: center;
+            
+            }
+            .news-item-thumbnail > img{
+                box-shadow: 0 15px 10px 5px #eee;
+            }
+            .news-item-thumbnail figcaption{
+                margin-top: 15px;
+            }
+
+            .news-item-brief{
+                margin-top: 10px;
+                line-height: 1.5;
+            }
+
+
+
         .group3{
             width: 190px;
         }
