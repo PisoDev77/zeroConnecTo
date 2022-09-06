@@ -728,6 +728,85 @@ a{
         .group3{
             width: 190px;
         }
+
+        /* 신규이벤트 및 관련사이트 */
+        .gradient-effect{
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #ccc linear-gradient(to bottom, #ccc, #eee);
+        }
+        .accent-color{
+            color: #FF870F;
+        }
+
+        .event-title, .related-title{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .event{            
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            border-bottom: 1px solid #aaa;
+            /* gap: 10px; */
+        }
+        .event-title{
+            flex-grow: 1;
+        }
+        
+        .event-button-wrapper{
+
+            display: flex;
+            flex-flow: row nowrap;
+            margin-left: auto;
+            
+        }
+        .event-button-wrapper button{
+            width: 19px;
+            height: 18px;
+            padding: 0;
+            border: 0;
+            
+            background: transparent;
+            background-image: url(./images/back_forward.png);
+            background-repeat: no-repeat;
+
+        }
+        .event-button-wrapper .event-button-next{
+            background-position: -36px 0;
+        }
+        
+        .event div:last-child{
+            background-color: red;
+            /* width: 190px; */
+            width: 100%;
+            margin-top: 10px;
+        }
+            .event-thumbnail img{
+                border: 1px solid #ccc;
+                box-shadow: 7px 7px 0 0 #aaa;
+            }
+
+        .event-brief{
+            margin: 10px 0;
+        }
+        /*
+        
+        .event-thumbnail{
+            margin: 2px 0 10px;
+        }
+            .event-thumbnail img{
+                border: 1px solid #ccc;
+                box-shadow: 5px 5px 0 0 #ccc;
+            }
+        .event-brief{
+            margin: 10px 0;
+        } */
+        .related{
+            /* background-color: purple; */
+            margin-top: 10px;
+        }
     
     /* 슬로건 */
 .slogan{
