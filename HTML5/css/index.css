@@ -863,30 +863,28 @@ a{
 
         .related-list{
             margin-top: 10px;
-            background-color: white;
+            background: #fff;
             border: 1px solid #aaa;
             border-radius: 5px;
             height: 27px;
-
             overflow: hidden;
-
-            text-indent: 25px;
-
-            /* 애니메이션된 프로퍼티 */
-            /* transition: all 400ms; */
             transition: height 400ms, padding 400ms 400ms;
-        }
-        .related-list:hover, .related-list:focus{
-            height: auto;
+          }
+          
+          .related-list:hover, .related-list:focus{
+            height: 147px;
             padding: 10px 0;
-        }
-        .related-list a{
+          }
+          
+          .related-list a{
             display: block;
             line-height: 25px;
-        }
-        .related-list a{
-            outline-offset: 2px;
-        }
+            text-indent: 25px;
+          }
+          
+          .related-list a:focus{
+            outline-offset: -2px;
+          }
         /* 
         .related-list li > a{
             display: inline-block;
