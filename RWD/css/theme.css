@@ -38,7 +38,8 @@
   --text-lg: 1.25rem; /* 20px */
   --text-xl: 1.5rem; /* 24px */
 
-  --container-max-width: 64rem; /* 1024px */
+  --container-width: 64rem; /* 1024px:64rem 1200px:75rem */
+  
 }
 
 
