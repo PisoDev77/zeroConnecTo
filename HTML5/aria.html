@@ -6,20 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹 카페 aria</title>
 
-    <link rel="stylesheet" href="./css/aria.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin="true"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="./css/aria/aria.css" />
 </head>
 <body>
-    <br /><br /><br /><br /><br />
     
-    <div class="static">
-        STATIC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-        <!-- <div class="inner">INNER</div> -->
+    <div class="header" role="header">
+        <div role="heading" aria-level="1" class="logo">
+            <div role="link" data-href="/" tabindex="0">
+                <img src="./assets/logo.png" alt="Web Cafe" />
+            </div>
+        </div>
+        <div class="member">
+            <div role="list">
+                <div role="listitem">홈</div>
+                <div aria-hidden="true">:</div>
+                <div role="listitem">로그인</div>
+                <div aria-hidden="true">:</div>
+                <div role="listitem">회원가입</div>
+                <div aria-hidden="true">:</div>
+                <div role="listitem">사이트맵</div>
+                <div aria-hidden="true">:</div>
+                <div role="listitem">English</div>
+            </div>
+        </div>
+        <div role="navigation" aria-label="메인메뉴" class="navigation">
+            <div role="menu" class="menu">
+                <div role="menu">
+                    <div role="button" tabindex="0" aria-pressed="true">HTML에 대하여</div>
+                    <div role="menu">
+                        <div role="menuitem">
+                            <div role="link" data-href="/" tabindex="0">HTML5 소개</div>
+                        </div>
+                        <div role="menuitem">
+                            <div role="link" data-href="/" tabindex="0">레퍼런스 소개</div>
+                        </div>
+                        <div role="menuitem">
+                            <div role="link" data-href="/" tabindex="0">활용예제</div>
+                        </div>
+                    </div>
+                </div>
+                <div role="menu">
+                    <div role="button" tabindex="0" aria-pressed="false">CSS에 대하여</div>
+                </div>
+                <div role="menu">
+                    <div role="button" tabindex="0" aria-pressed="false">웹표준</div>
+                </div>
+                <div role="menu">
+                    <div role="button" tabindex="0" aria-pressed="false">웹 접근성</div>
+                </div>
+                <div role="menu">
+                    <div role="button" tabindex="0" aria-pressed="false">묻고 답하기</div>
+                </div>
+                <div role="menu">
+                    <div role="button" tabindex="0" aria-pressed="false">자료실</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="relative">
-        RELATIVE
-        <!-- <div class="inner">INNER</div> -->
-    </div>
-
+    
 
 </body>
 </html>
