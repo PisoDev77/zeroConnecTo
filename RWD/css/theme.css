@@ -2,17 +2,22 @@
   --white: #fff;
   --black: #000;
   --silver: #767676;
-  --primary-color: #38302e;
-  --secondary-color: #988574;
-  --accent-color: #ffc;
-  --accent-opacity-color: hsla(60, 50%, 50%, 0.85);
-
+  --dark-brown: #38302e;
+  --light-brown: #988574;
+  --light-yellow: #ffc;
+  --yellow-opacity: hsla(60, 50%, 50%, 0.85);
+  
   --green: #abd375;
   --yellow: #e8ca58;
   --orange: #eea60a;
   --brown: #988574;
   --blue: #6aaee6;
-
+  
+  --primary-color: var(--dark-brown);
+  --secondary-color: var(--light-brown);
+  --accent-color: var(--light-yellow);
+  --accent-opacity-color: var(--yellow-opacity);
+  
   --accent-book: var(--green);
   --accent-news: var(--yellow);
   --accent-board: var(--brown);
@@ -33,7 +38,7 @@
   --text-lg: 1.25rem; /* 20px */
   --text-xl: 1.5rem; /* 24px */
 
-  --container-width: 64rem; /* 1024px */
+  --container-max-width: 64rem; /* 1024px */
 }
 
 
