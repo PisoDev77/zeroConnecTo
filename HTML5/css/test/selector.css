@@ -1,0 +1,24 @@
+
+
+
+#selector-examples li{
+    border: 1px solid black;
+    padding: 8px;
+}
+#selector-examples li div{
+    padding: 8px;
+}
+
+#selector-examples .fst div{
+    background-color: lime;
+}
+#selector-examples .fst div[aria-label="selector-box"]{
+    background-color: pink;
+}
+#selector-examples .fst .class-box{
+    /* background-color: yellow; */
+}
+#selector-examples .fst #id-box{
+
+    /* background-color: red; */
+}

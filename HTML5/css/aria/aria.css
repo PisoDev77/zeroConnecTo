@@ -1,45 +1,7 @@
 @import url("../normalize.css");
 @import url("../reset.css");
 
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-html{
-    font-size: 10px;
-}
-body{
-    font-family: 
-        Pretendard, -apple-system, 
-        BlinkMacSystemFont, system-ui, 
-        Roboto, "Helvetica Neue", "Segoe UI", 
-        "Apple SD Gothic Neo", "Noto Sans KR", 
-        "Malgun Gothic", "Apple Color Emoji", 
-        "Segoe UI Emoji", "Segoe UI Symbol", 
-        sans-serif;
-    font-size: 1.4rem;
-
-    background: 
-        url("../images/bg_flower.png") no-repeat 50% 0, 
-        linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%),
-        #ccc
-    ;
-
-}
-a{
-    text-decoration: none;
-    color:inherit;
-}
-.header,.visual,.main,.slogan,.footer-inner{
-    width: 940px;
-    margin: 0 auto;
-}
-.a11y-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-}
+@import url("./init.css");
 
 
 @import url("./header.css");

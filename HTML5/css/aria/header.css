@@ -47,7 +47,7 @@ div[role="navigation"]{
     background-color: pink;
     line-height: 45px;
     padding:0 21px;
-    /* font-size: 1.6rem; */
+    font-size: 1.6rem;
     font-weight: 700;
     color: #fff;
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000;       
