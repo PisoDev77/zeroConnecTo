@@ -1,0 +1,63 @@
+
+.header{
+    background:#fff;
+    position: relative;
+    padding: 0 30px;
+    border-radius: 0 0 15px 15px;
+}
+.logo{
+    position: absolute;
+    top: 45px;
+    left: 60px;
+}
+.logo div[role="link"]{
+    display: inline-block;
+}
+
+.member div{
+    display: block;
+    text-align: right;
+    transform: translateX(8px);
+    padding: 4px 0;
+}
+.member > div div{
+    display: inline-block;
+    padding: 6px 8px;
+    background-color: lime;
+}
+
+div[role="navigation"]{
+    padding-bottom: 40px;
+    /* background: orange; */
+}
+.menu{
+    background: 
+        linear-gradient(to bottom, #f7c231 0%,#ff870f 35%,#ff870f 35%,#e65c00 70%,#f7c231 100%),
+        #e65c00;
+    padding-left: 232px;
+    height: 47px;
+    border-top:2px solid currentColor;
+    border-radius: 0 0 5px 5px;
+}
+.menu div[role="menu"]{
+    float: left;
+}
+.menu div[role="menu"] div[role="button"]{
+    border-left: 2px solid #fff;
+    background-color: pink;
+    line-height: 45px;
+    padding:0 21px;
+    /* font-size: 1.6rem; */
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000;       
+}
+.menu div[role="menu"] div[role="button"][aria-pressed="true"]{
+    color: yellow;
+}
+.menu div[role="menu"] div[role="button"][aria-pressed="true"]::after{
+    content: "";
+    background: #000;
+    display: block;
+    height: 2px;
+}

@@ -175,7 +175,7 @@
             class="login-form"
           >
             <fieldset>
-              <legend class="sr-only">회원 로그인 폼</legend>
+              <legend class="sr-only" aria-hidden="true">회원 로그인 폼</legend>
               <div class="user-email">
                 <label for="userEmail">아이디</label
                 ><input
@@ -213,7 +213,7 @@
         </section>
 
         <section class="validation-links">
-          <h2 class="validations-title sr-only">"유효성 검사 배너"</h2>
+          <h2 class="validations-title sr-only" aria-hidden="true">"유효성 검사 배너"</h2>
           <ul class="validations">
             <li class="validation-markup">
               <a
@@ -386,7 +386,41 @@
               <li><a href="/">웹접근성 연구소</a></li>
               <li><a href="/">web Standards</a></li>
               <li><a href="/">W3C</a></li>
+
+                      <!-- section.popular
+                h2.popular-title+button.more.popular-more
+                  ol.popular-list
+                    li*4>a[href="/"] -->
+                
             </ul>
+          </section>
+        </div>
+
+        <!-- <section class="favorite gradient-effect">
+          <h2 class="favorite-title">인기<span class="accent-color">사이트</span></h2>
+          <ol class="favorite-list">
+            <li class="no1"><a href="/">W3S<em arial-label="순위 상승"></em></a></li>
+            <li class="no2"><a href="/">Web Standards<em arial-label="순위 하락"></em></a></li>
+            <li class="no3"><a href="/">CSS ZenGarden<em arial-label="순위 변동없음"></em></a></li>
+            <li class="no4"><a href="/">MDN<em arial-label="순위 상승"></em></a></li>
+          </ol>
+          <a href="/" class="more icon-plus favorite-more">더보기</a>
+        </section> -->
+        <div class="gradient-effect margin-top-default">
+          <section class="favorite">
+            <h2 class="favorite-title">인기 <span class="accent-color">사이트</span></h2>
+            <ol class="favorite-list">
+              <li class="no1">
+                <a href="/">
+                  W3C
+                </a>
+                <em class="up" aria-label="순위 상승"></em>
+              </li>
+              <li class="no2"><a href="/">Web Standards</a><em class="down" aria-label="순위 하락"></em></li>
+              <li class="no3"><a href="/">MDN</a><em class="stop" aria-label="순위 변동없음"></em></li>
+              <li class="no4"><a href="/">CSS ZenGarden</a><em class="up" aria-label="순위 상승"></em></li>
+            </ol>
+            <a href="/" class="more favorite-more icon-plus" title="인기 사이트">더보기</a>
           </section>
         </div>
       </div>
@@ -397,9 +431,47 @@
             div.group.group${그룹$}*3
         -->
     </main>
-    <article class="slogan">슬로건</article>
+    <article class="slogan">
+      
+      <h2 class="slogan-title" title="웹카페에서 웹표준을">슬로건</h2>
+      <p class="slogan-content">
+        <q cite="http://w3.org/WAI">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</q>
+        Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+      </p>
+
+      <footer class="sr-only">
+        출처 : W3C, http://w3.org/WAI/
+      </footer>
+
+    </article>
     <footer class="footer">
-      <div class="foot  er-inner">푸터</div>
+      
+      <div class="footer-inner">
+        <a href="/" class="footer-logo">
+          <img src="assets/footer_logo.png" alt="web cafe" />
+        </a>
+        <ul class="guide-list">
+          <li><a href="/">회사 소개</a></li>
+          <li><a href="/">개인정보 보호정책</a></li>
+          <li><a href="/">이메일주소 무단수집 거부</a></li>
+          <li><a href="/">contact us</a></li>
+          <li><a href="/">site map</a></li>
+        </ul>
+        <address class="address">
+          <span>서울시 강남구 역삼동 718-5</span>
+          <span>전화 : 02-3429-5114</span>
+          <span>email : <a href="mailto:seulbinim@gmail.com?subject=문의사항">seulbinim@gmail.com</a></span>
+        </address>
+        <small class="copyright">
+          Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+        </small>
+        <div class="badge-container">
+          <img class="badge-html" src="assets/html5_logo.png" alt="최신 표준인 HTML5를 사용하여 마크업 했습니다." />
+          <img class="badge-css" src="assets/css3_logo.png" alt="최신 기술인 CSS3를 활용하여 디자인 했습니다." />
+        </div>
+        
+      </div>
+      
     </footer>
 
     <!-- 
