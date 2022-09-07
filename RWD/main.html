@@ -26,7 +26,31 @@
 <body>
 
 
-    <header class="appHeader">헤더</header>
+    <header class="appHeader">
+      
+      <h1 class="logo">
+        <a href="/" class="logo__link" aria-label="Web Cafe"></a>
+      </h1>
+      <ul class="memberOnly">
+        <li><a href="">로그인</a></li>
+        <li><span class="divider" aria-hidden="true">|</span><a href="">회원가입</a></li>
+        <li><span class="divider" aria-hidden="true">|</span><a href="">커뮤니티</a></li>
+      </ul>
+      <form action="/" class="searchForm">
+        <fieldset>
+          <legend>검색폼</legend>
+          <div class="searchForm__group">
+            <div class="formInput">
+              <label for="search" class="a11yHidden formInput__label">검색어</label>
+              <input id="search" class="formInput__input" type="search" required placeholder="검색어를 입력하세요." name="search" />
+            </div>
+            <button type="submit" class="button button--primary button--fill">검색</button>
+          </div>
+        </fieldset>
+
+      </form>
+
+    </header>
     <nav class="appNavigation">
       <ul class="menu">
         <li><a href="/">aa</a></li>
