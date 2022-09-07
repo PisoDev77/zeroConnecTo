@@ -2,3 +2,156 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+/* 공통부분 */
+/* .appHeader,.appNavigation ,.appMain{
+    padding: var(--spacing-base) var(--spacing-lg);
+} */
+
+/* 헤더 */
+.appHeader{
+    background-color: yellow;
+    padding: var(--spacing-base) var(--spacing-lg);
+}
+/* 내비게이션 */
+.appNavigation{
+    background-color: pink;
+    padding: var(--spacing-base) var(--spacing-lg);
+}
+/* 메인 */
+.appMain{
+    background-color: blue;
+    padding: var(--spacing-base) var(--spacing-lg);
+}
+
+
+    /* 추천 서적 */
+    .book{
+        background-color: yellowgreen;
+    }
+
+    /* 새소식 */
+    .news{
+        background-color: orange;
+    }
+
+    /* 게시판 */
+    .board{
+        background-color: aquamarine;
+    }
+
+    /* 인기 사이트 */
+    .favorite{
+        background-color: violet;
+    }
+
+    /* 트위터 */
+    .twitter{
+        background-color: lightgreen;
+    }
+
+
+/* 푸터 */
+.appFooter{
+    background-color: lime;
+    padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+/* 모바일 스타일 */
+@media (max-width: 767px){
+    /* 모바일 내비게이션 */
+    .appNavigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        /* 뷰포트 단위로 %는 왜 안하는지 다시 */
+        height: 100vh;
+        transform: translateX(-120%);
+    }
+
+    /* 모바일 메인 */
+    .appMain{
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--spacing-base);
+    }
+    /* 모바일 메인 세션 영역 */
+    .appMain section, .twitter{
+        width: 100%;
+    }
+        
+
+    /* 모바일 */
+    /* 모바일 */
+}
+
+/* 데스크톱 스타일 */
+    /* 
+        이렇게 꼭 안해도 됨 ㅇ
+        @media (min-width: 768px) and (max-width: 1024px){ 
+            */
+@media (min-width: 768px){ 
+    /* 데스크톱 헤더 */
+    .appHeader{
+        max-width: var(--container-width);
+        margin-left:auto;
+        margin-right:auto;
+    }
+    /* 데스크톱 내비게이션 */
+    .appNavigation{
+        background-color: var(--secondary-color);
+        color: var(--white);
+    }
+        /* 데스크톱 메인 메뉴 */
+        .menu{
+            max-width: var(--container-width);
+            margin-left: auto;
+            margin-right: auto;
+            background-color: tomato;
+        }
+    /* 데스크톱 메인 */
+    .appMain{
+        max-width: var(--container-width);
+        margin-left: auto;
+        margin-right: auto;
+        
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "news news news news news news news news news news news news"
+            "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+            "book book book book . board board board board board board board"
+        ;
+        gap: var(--spacing-base);
+    }
+        /* 데스크톱 추천 서적 */
+        .book{
+            /* grid-row-start: 2;
+            grid-row-end: 4;
+            
+            grid-column-start: 1;
+            grid-column-end: 5; */
+            /* grid-row: 2/4;
+            grid-column: 1/5; */
+            /* grid-area: 2/1/4/5; */
+            grid-area: book;
+        }
+        /* 데스크톱 새소식 */
+        .news{
+            grid-area:news;
+        }
+        /* 데스크톱 게시판 */
+        .board{
+            grid-area:board;
+        }
+        /* 데스크톱 인기 사이트 */
+        .favorite{
+            grid-area:favorite;
+        }
+        /* 데스크톱 트위터 */
+        .twitter{
+            grid-area:twitter;
+        }
+}
