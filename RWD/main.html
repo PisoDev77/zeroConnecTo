@@ -50,12 +50,29 @@
 
       </form>
 
+      <div class="buttonWrapper">
+        <button class="button--none button--burger" aria-label="메뉴 열기">
+          <span class="button--burgerBarTop"></span> 
+          <span class="button--burgerBarMiddle"></span> 
+          <span class="button--burgerBarBottom"></span>
+        </button>
+      </div>
+
     </header>
-    <nav class="appNavigation">
-      <ul class="menu">
-        <li><a href="/">aa</a></li>
-      </ul>
-    </nav>
+
+
+   <nav class="appNavigation menu">
+    <h2 class="a11yHidden">메인 메뉴</h2>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="/" class="menu__link" tabindex="-1">HTML에 대해</a></li>
+      <li class="menu__item"><a href="/" class="menu__link" tabindex="-1">CSS에 대해</a></li>
+      <li class="menu__item"><a href="/" class="menu__link" tabindex="-1">웹표준/웹접근성</a></li>
+      <li class="menu__item"><a href="/" class="menu__link" tabindex="-1">묻고 답하기</a></li>
+      <li class="menu__item"><a href="/" class="menu__link" tabindex="-1">자료실</a></li>
+    </ul>
+  </nav>
+
+
     <main class="appMain">
       <section class="book">추천서적</section>
       <section class="news">새소식</section>
